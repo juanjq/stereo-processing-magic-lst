@@ -225,12 +225,12 @@ create_irf:
     gammaness:
         cut_type: "dynamic"  # select "global" or "dynamic"
         global_cut_value: 0.8  # used for the global cut
-        efficiency: 0.9  # used for the dynamic cuts
+        efficiency: 0.75  # used for the dynamic cuts
         min_cut: 0.05  # used for the dynamic cuts
         max_cut: 0.85  # used for the dynamic cuts
 
     theta:
-        cut_type: "global"  # select "global" or "dynamic"
+        cut_type: "dynamic"  # select "global" or "dynamic"
         global_cut_value: "0.2 deg"  # used for the global cut
         efficiency: 0.75  # used for the dynamic cuts
         min_cut: "0.1 deg"  # used for the dynamic cuts
@@ -239,6 +239,6 @@ create_irf:
 
 dl2_to_dl3:
     interpolation_method: "nearest"  # select "nearest", "linear" or "cubic"
-    source_name: "Crab"
-    source_ra: null  # used when the source name cannot be resolved
-    source_dec: null  # used when the source name cannot be resolved
+    source_name: "S240615dg"
+    source_ra: "7.69 deg"  # used when the source name cannot be resolved
+    source_dec: "45.67 deg"  # used when the source name cannot be resolved
